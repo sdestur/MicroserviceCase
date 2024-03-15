@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="8.1.3" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\MicroServiceCase.FastHttp\MicroServiceCase.FastHttp.csproj" />
+    <ProjectReference Include="..\..\..\..\MicroserviceCase.Shared\MicroserviceCase.Shared.csproj" />
+    <ProjectReference Include="..\..\CustomerService\MicroserviceCase.Customer.Application\MicroserviceCase.Customer.Application.csproj" />
+    <ProjectReference Include="..\MicroserviceCase.Order.Infrustructure\MicroserviceCase.Order.Infrustructure.csproj" />
+  </ItemGroup>
+
+</Project>
